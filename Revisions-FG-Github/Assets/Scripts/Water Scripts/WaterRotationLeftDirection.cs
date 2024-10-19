@@ -3,10 +3,12 @@ using UnityEngine;
 public class WaterRotationLeftDirection : MonoBehaviour
 {
     private float speed;
+    private float minRotationSpeed = 10;
+    private float maxRotationSpeed = 20;
  
     void Start()
     {
-        speed = -1 * Random.Range(10, 20);
+        speed = -1 * Random.Range(minRotationSpeed, maxRotationSpeed);
 
     }
 
