@@ -6,12 +6,7 @@ public class tutorialscript : MonoBehaviour
     public KeyCode trigger;
     public GameObject[] tutorials;
     private static bool _hasInitialized = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(trigger))
