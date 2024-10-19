@@ -736,6 +736,11 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.0031425168}
   m_Radius: 0.71574163
+--- !u!1 &560940178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3249720705030152005, guid: b0d935662e1a04ebcaad5658872cffac, type: 3}
+  m_PrefabInstance: {fileID: 41776187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &564155552
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,13 +3442,35 @@ PrefabInstance:
     - {fileID: 8613656126817650663, guid: 986d0c8054a304ce998bbfc381bfc24c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4682719487842418414, guid: 986d0c8054a304ce998bbfc381bfc24c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1963800476}
   m_SourcePrefab: {fileID: 100100000, guid: 986d0c8054a304ce998bbfc381bfc24c, type: 3}
 --- !u!1 &1963800475 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4682719487842418414, guid: 986d0c8054a304ce998bbfc381bfc24c, type: 3}
   m_PrefabInstance: {fileID: 1963800474}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1963800476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963800475}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1233e1efaaa6c474a8ee50af6026d27d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frog: {fileID: 560940178}
+  arrow: {fileID: 75583816}
+  level: 5
+  portalSound: {fileID: 8300000, guid: 8182e5368322b498dbd31ee223d6deb0, type: 3}
+  advanceScene: {fileID: 0}
+  reachedPortal: 0
+  starCounter: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
