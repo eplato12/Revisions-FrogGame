@@ -6,9 +6,9 @@ using System.Collections;
 public class AdvanceScene : MonoBehaviour
 {
 
-    public GameObject exitPanel;
-    public GameObject playButton;
-    public GameObject[] UIelements;
+    [SerializeField] GameObject exitPanel;
+    [SerializeField] GameObject playButton;
+    [SerializeField] GameObject[] UIelements;
     private static string lastSceneName;
 
 
