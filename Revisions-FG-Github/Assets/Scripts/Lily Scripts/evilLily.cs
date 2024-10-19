@@ -3,7 +3,7 @@ using UnityEngine;
 public class evilLily : MonoBehaviour
 {
 
-    public float rotationSpeed = 30f;
+    [SerializeField] float rotationSpeed = 30f;
     private int rotate;
 
 

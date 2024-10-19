@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PortalSpin : MonoBehaviour
 {
-    public float spinSpeed = 100f;  
+    [SerializeField] float spinSpeed = 100f;  
 
     void Update()
     {
