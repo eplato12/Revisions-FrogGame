@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class tutorialscript : MonoBehaviour
 {
-    public GameObject UIElement;
-    public KeyCode trigger;
-    public GameObject[] tutorials;
+    [SerializeField] GameObject UIElement;
+    [SerializeField] KeyCode trigger;
+    [SerializeField] GameObject[] tutorials;
     private static bool _hasInitialized = false;
 
     void Update()
