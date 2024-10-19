@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Frog Die.unity
     guid: 4b573c2c312cc4def912f9ff7a7745a7
   - enabled: 1
-    path: Assets/Scenes/Loading Scene.unity
+    path: Assets/Scenes/LoadingScene.unity
     guid: 6bed85965ea704fa6908ff32fa35d3e5
   - enabled: 0
     path: Assets/Scenes/Test Level 1.unity
