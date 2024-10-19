@@ -9,23 +9,23 @@ public class FrogScript : MonoBehaviour
     public float lilyPadColliderWidth;
 
     [Header("Audio Clips")]
-    public AudioClip jumpSound;
-    public AudioClip splashSound;
-    public AudioClip portalSound;
-    public AudioClip ribbitSound;
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] AudioClip splashSound;
+    [SerializeField] AudioClip portalSound;
+    [SerializeField] AudioClip ribbitSound;
 
     [Header("Other Scripts")]
-    public AdvanceScene advanceScene;
-    public lily lilly;
-    public ParticleSystem splashParticleSystem;
+    [SerializeField] AdvanceScene advanceScene;
+    [SerializeField] lily lilly;
+    [SerializeField] ParticleSystem splashParticleSystem;
 
     [Header("GameObjects")]
-    public GameObject firstLily;
-    public GameObject arrow;
-    public GameObject portal;
+    [SerializeField] GameObject firstLily;
+    [SerializeField] GameObject arrow;
+    [SerializeField] GameObject portal;
 
     [Header("Level Indicator")]
-    public int level;
+    [SerializeField] int level;
 
     private AudioSource frogAudio;
     private SpriteRenderer frogSprite;
@@ -58,7 +58,7 @@ public class FrogScript : MonoBehaviour
             firstLily.SetActive(false);
         }
 
-        if (starCounter == 2)
+        if (starCounter == 2 && level == 5)
         {
             portal.SetActive(true);
         }
@@ -75,7 +75,10 @@ public class FrogScript : MonoBehaviour
             else
             {
                 IsLily(transform.position);
-                IsStar();
+                if (level == 5)
+                {
+                    IsStar();
+                }
             }
         } 
 
