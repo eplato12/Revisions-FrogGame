@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class lily : MonoBehaviour
 {
-    public Sprite evilLily;
-    public Sprite niceLily;
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] Sprite evilLily;
+    [SerializeField] Sprite niceLily;
+    [SerializeField] float rotationSpeed = 90f;
 
-    public float rotationSpeed = 90f;
+    private SpriteRenderer spriteRenderer;
     private int rotate;
     private bool isEvil = false;
 
