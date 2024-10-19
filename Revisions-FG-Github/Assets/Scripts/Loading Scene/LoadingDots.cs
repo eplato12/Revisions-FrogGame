@@ -5,8 +5,8 @@ using System.Collections;
 
 public class LoadingDots : MonoBehaviour
 {
-    public TextMeshProUGUI textMeshPro; 
-    public float dotAnimationDelay = 0.5f;
+    [SerializeField] TextMeshProUGUI textMeshPro;
+    [SerializeField] float dotAnimationDelay = 0.5f;
 
     private void Start()
     {
