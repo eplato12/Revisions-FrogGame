@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1097886776378277806}
   m_Layer: 0
-  m_Name: WaterRings
+  m_Name: water rings
   m_TagString: Undefined
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

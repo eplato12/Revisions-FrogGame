@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7663262159064041929}
   - component: {fileID: 3496009023577423293}
   m_Layer: 0
-  m_Name: JumpArrow
+  m_Name: jump arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

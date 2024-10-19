@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1337210591885832255}
   - component: {fileID: 3339571064358113770}
   m_Layer: 0
-  m_Name: EvilLily
+  m_Name: evilLily
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
