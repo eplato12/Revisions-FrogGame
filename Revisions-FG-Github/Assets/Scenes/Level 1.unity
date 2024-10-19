@@ -2973,7 +2973,7 @@ MonoBehaviour:
   - {fileID: 2064350536}
   - {fileID: 462810459}
   - {fileID: 194153418}
-  portal: {fileID: 0}
+  portal: {fileID: 4682719487842418414, guid: 986d0c8054a304ce998bbfc381bfc24c, type: 3}
   star: {fileID: 7739249783103490991, guid: dcf0611159df14f6fb3d0deb5d46586c, type: 3}
   level: 1
 --- !u!114 &1919094776
