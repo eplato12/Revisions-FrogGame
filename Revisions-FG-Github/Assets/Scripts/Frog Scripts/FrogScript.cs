@@ -99,7 +99,7 @@ public class FrogScript : MonoBehaviour
 
     private bool IsPortal(Vector2 gridPosition)
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(gridPosition, 0.2f);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(gridPosition, 0.2f); 
         foreach (Collider2D collider in colliders)
         {
             if (collider.CompareTag("portal"))
@@ -194,7 +194,9 @@ public class FrogScript : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(5, 20));
+            float minSeconds = 5;
+            float maxSeconds = 15;
+            yield return new WaitForSeconds(Random.Range(minSeconds, maxSeconds));
             PlayAudio(ribbitSound);
         }
     }
