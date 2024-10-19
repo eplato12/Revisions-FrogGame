@@ -7,26 +7,28 @@ public class SpawnLilyPads : MonoBehaviour
 
 {
     [Header("Lilypad Objects")]
-    public GameObject[] waterRings;
-    public GameObject[] lillies;
+    [SerializeField] GameObject[] waterRings;
+    [SerializeField] GameObject[] lillies;
 
     [Header("Other Objects")]
-    public GameObject portal;
-    public GameObject star;
+    [SerializeField] GameObject portal;
+    [SerializeField] GameObject star;
 
     [Header("Level Indicator")]
-    public int level;
+    [SerializeField] int level;
 
     private lily Lily;
-
-
     private int[] numLillies = { 20, 14, 7 };
     private Vector3[] lilyScales = {
-            new Vector3((float)0.3328913, (float)0.328198, 1),
-            new Vector3((float)0.3505113, (float)0.3406977, 1),
-            new Vector3((float)0.4058551, (float)0.394492, 1)};
-    private float[] lilyProbabilityLevel = { 10, 8, 9, 10, 9 };
+            // local scale of lily pads to water rings, different for each ring
+            new Vector3((float)0.3328913, (float)0.328198, 1), // first ring
+            new Vector3((float)0.3505113, (float)0.3406977, 1), // second ring 
+            new Vector3((float)0.4058551, (float)0.394492, 1)}; // third ring
 
+    // ints represent the probability of spawning a lily at any given point on the water rings
+    // the difficulty of each level requires a higher or lower probability for a lily to spawn
+    // the ints are corresponding to the probability for each level (1,2,3,4,5)
+    private float[] lilyProbabilityLevel = { 10, 8, 9, 10, 9 }; 
 
 
     void Start()
