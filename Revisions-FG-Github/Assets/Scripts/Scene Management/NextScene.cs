@@ -27,8 +27,18 @@ public class AdvanceScene : MonoBehaviour
 
     public void LoadNextScene()
     {
-        lastSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        lastSceneName = currentSceneName;
+        string nextSceneName = GetNextScene(currentSceneName);
+        if (currentSceneName == "Intro UI")
+        {
+            SceneManager.LoadScene("Level Menu");
+        }
+        else
+        {
+            SceneTransitionInfo.NextSceneName = nextSceneName;
+            SceneManager.LoadScene("LoadingScene");
+        }
     }
 
     public void openExitPanel()
@@ -92,6 +102,20 @@ public class AdvanceScene : MonoBehaviour
         if (!string.IsNullOrEmpty(lastSceneName))
         {
             SceneManager.LoadScene(lastSceneName);
+        }
+    }
+
+    private string GetNextScene(string currentSceneName)
+    {
+        switch (currentSceneName)
+        {
+            case "Intro UI": return "Level Menu";
+            case "Level 1": return "Level 2";
+            case "Level 2": return "Level 3";
+            case "Level 3": return "Level 4";
+            case "Level 4": return "Level 5";
+            case "Level 5": return "Win";
+            default: return null;
         }
     }
 

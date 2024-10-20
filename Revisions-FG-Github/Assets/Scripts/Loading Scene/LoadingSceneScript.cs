@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class LoadingSceneScript : MonoBehaviour
 {
-
     public AdvanceScene advanceScene;
 
     void Start()

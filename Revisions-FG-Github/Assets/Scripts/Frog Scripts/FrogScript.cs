@@ -120,27 +120,15 @@ public class FrogScript : MonoBehaviour
 
     private void HandlePortal()  
     {
-        SceneTransitionInfo.NextSceneName = GetNextScene(SceneManager.GetActiveScene().name);
-        advanceScene.toLevel("LoadingScene"); 
+        //SceneTransitionInfo.NextSceneName = GetNextScene(SceneManager.GetActiveScene().name);
+        //advanceScene.toLevel("LoadingScene");
+        advanceScene.LoadNextScene();
     }  
 
     private IEnumerator HandleLanding()
     {
         yield return new WaitForSeconds(frogAnimator.GetCurrentAnimatorStateInfo(0).length);
         frogAnimator.SetBool("isJumping", false);  
-    }
-    
-    private string GetNextScene(string currentScene)
-    {
-        switch (currentScene)
-        {
-            case "Level 1": return "Level 2";
-            case "Level 2": return "Level 3";
-            case "Level 3": return "Level 4";
-            case "Level 4": return "Level 5";
-            case "Level 5": return "Win";
-            default: return null;
-        }
     }
 
     private void IsLily(Vector2 gridPosition)
