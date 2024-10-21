@@ -34,6 +34,15 @@ public class lily : MonoBehaviour
         UpdateSprite();
     }
 
+
+    private void SpeedUpLilies(float newSpeed)
+    {
+        if (isEvil)
+        {
+            speedIncrease(newSpeed);
+        }
+    }
+
     public void increaseSpeedBy(float speedMultiple)
     {
         rotationSpeed *= speedMultiple;
@@ -73,9 +82,9 @@ public class lily : MonoBehaviour
     private IEnumerator IncreaseRotationSpeedForSeconds(float speedMultiplier)
     {
         float targetSpeed = rotationSpeed;
-        float currentSpeed=rotationSpeed * speedMultiplier;
-        float lerpTime=5;
-        float elapsedTime=0;
+        float currentSpeed = rotationSpeed * speedMultiplier;
+        float lerpTime = 5;
+        float elapsedTime = 0;
 
         while (elapsedTime < lerpTime)
         {
@@ -91,4 +100,3 @@ public class lily : MonoBehaviour
     }
 
 }
-

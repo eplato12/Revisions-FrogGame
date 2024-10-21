@@ -211,6 +211,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1963800475}
     - target: {fileID: 3462809982385347042, guid: b0d935662e1a04ebcaad5658872cffac, type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 564155553}
+    - target: {fileID: 3462809982385347042, guid: b0d935662e1a04ebcaad5658872cffac, type: 3}
       propertyPath: firstLily
       value: 
       objectReference: {fileID: 516606352}
@@ -779,6 +783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bd47ae929b4828a703fcb7c393aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  star1: {fileID: 0}
+  star2: {fileID: 0}
   waterRings:
   - {fileID: 937588954}
   - {fileID: 937588952}
@@ -1656,7 +1662,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
   - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
   - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
-  - {fileID: 8300000, guid: e68b5406478d845adbf9f6eb1f3e85e2, type: 3}
+  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
 --- !u!4 &1148965331
 Transform:
   m_ObjectHideFlags: 0

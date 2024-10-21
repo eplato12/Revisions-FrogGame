@@ -11,6 +11,8 @@ TagManager:
   - portal
   - evilLily
   - star
+  - starLily1
+  - starLily2
   layers:
   - Default
   - TransparentFX

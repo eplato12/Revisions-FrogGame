@@ -19,6 +19,7 @@ public class FrogScript : MonoBehaviour
     [SerializeField] AdvanceScene advanceScene;
     [SerializeField] lily lilly;
     [SerializeField] ParticleSystem splashParticleSystem;
+    [SerializeField] SpawnLilyPads spawner;
 
     [Header("GameObjects")]
     [SerializeField] GameObject firstLily;
@@ -34,7 +35,7 @@ public class FrogScript : MonoBehaviour
     private Coroutine randomSoundCoroutine;
     private float jumpDistance = 1f;
     private float newSpeed = 2.0f;
-    
+
 
     void Start()
     {
@@ -72,7 +73,7 @@ public class FrogScript : MonoBehaviour
             {
                 Invoke("HandlePortal", 1.0f);
             }
-            
+
             else
             {
                 IsLily(transform.position);
@@ -81,13 +82,13 @@ public class FrogScript : MonoBehaviour
                     IsStar();
                 }
             }
-        } 
+        }
 
     }
 
     public void GoToDeathScene()
     {
-        advanceScene.toLevel("Frog Die"); 
+        advanceScene.toLevel("Frog Die");
     }
 
     private void Jump()
@@ -100,7 +101,7 @@ public class FrogScript : MonoBehaviour
 
     private bool IsPortal(Vector2 gridPosition)
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(gridPosition, 0.2f); 
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(gridPosition, 0.2f);
         foreach (Collider2D collider in colliders)
         {
             if (collider.CompareTag("portal"))
@@ -119,41 +120,34 @@ public class FrogScript : MonoBehaviour
         arrow.SetActive(false);
     }
 
-    private void HandlePortal()  
+    private void HandlePortal()
     {
         //SceneTransitionInfo.NextSceneName = GetNextScene(SceneManager.GetActiveScene().name);
         //advanceScene.toLevel("LoadingScene");
         advanceScene.LoadNextScene();
-    }  
+    }
 
     private IEnumerator HandleLanding()
     {
         yield return new WaitForSeconds(frogAnimator.GetCurrentAnimatorStateInfo(0).length);
-        frogAnimator.SetBool("isJumping", false);  
+        frogAnimator.SetBool("isJumping", false);
     }
 
     private void IsLily(Vector2 gridPosition)
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(gridPosition, lilyPadColliderWidth);
-        bool isOnLily = false; 
+        bool isOnLily = false;
 
         foreach (Collider2D collider in colliders)
         {
-            if (collider.CompareTag("lily"))
+            if (collider.CompareTag("lily") || collider.CompareTag("starLily1") || collider.CompareTag("starLily2") || collider.CompareTag("evilLily"))
             {
                 transform.parent = collider.gameObject.transform;
                 transform.localPosition = Vector3.zero;
                 isOnLily = true;
                 break;
             }
-            else if (collider.CompareTag("evilLily"))
-            {
-                transform.parent = collider.gameObject.transform;
-                transform.localPosition = Vector3.zero;
-                isOnLily = true;
-                SpeedUpLilies(); 
-                break;
-            }
+
         }
         if (!isOnLily)
         {
@@ -163,16 +157,6 @@ public class FrogScript : MonoBehaviour
             advanceScene.Invoke("ReloadScene", 0.5f);
         }
     }
-
-    private void SpeedUpLilies()
-    {
-        if (lilly != null)
-        {
-            lilly.speedIncrease(newSpeed);
-        }
-    }
-
- 
 
     private void PlayAudio(AudioClip clip)
     {
@@ -192,18 +176,19 @@ public class FrogScript : MonoBehaviour
 
     private void IsStar()
     {
-        if (transform.parent.childCount > 1)
+        if (transform.parent.CompareTag("starLily1"))
         {
-            
-            for (int i = 0; i < transform.parent.transform.childCount; i++)
-            {
-                GameObject lilyChild = transform.parent.transform.GetChild(i).gameObject;
-                if (lilyChild.CompareTag("star"))
-                {
-                    Destroy(lilyChild);
-                    starCounter++;
-                }
-            }
+            starCounter++;
+            Destroy(spawner.star1);
+            transform.parent.tag = "lily";
+        }
+
+
+        if (transform.parent.CompareTag("starLily2"))
+        {
+            starCounter++;
+            Destroy(spawner.star2);
+            transform.parent.tag = "lily";
         }
     }
 

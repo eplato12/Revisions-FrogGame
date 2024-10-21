@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour
 {
-    [SerializeField] private AudioClip introMusic;        
-    [SerializeField] private AudioClip levelMenuMusic;   
+    [SerializeField] private AudioClip introMusic;
+    [SerializeField] private AudioClip levelMenuMusic;
     [SerializeField] private AudioClip[] levelMusic;
 
     private static MusicManager instance;
@@ -18,24 +18,24 @@ public class MusicManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
             audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.loop = true;  
+            audioSource.loop = true;
             audioSource.volume = 0.4f;
-            PlayMusicForCurrentScene(); 
+            PlayMusicForCurrentScene();
         }
         else
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
         }
     }
 
     private void Start()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;  
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        PlayMusicForCurrentScene();  
+        PlayMusicForCurrentScene();
     }
 
     private void PlayMusicForCurrentScene()
@@ -44,26 +44,27 @@ public class MusicManager : MonoBehaviour
 
         if (sceneName == "Intro UI" && !audioSource.isPlaying)
         {
-            PlayMusic(introMusic);  
+            PlayMusic(introMusic);
         }
         else if (sceneName == "Level Menu" && !audioSource.isPlaying)
         {
-            PlayMusic(levelMenuMusic);  
+            PlayMusic(levelMenuMusic);
         }
-        else if (sceneName.StartsWith("Level"))  
+        else if (sceneName.StartsWith("Level"))
         {
             int levelIndex = GetLevelIndex(sceneName);
-            if (levelIndex >= 0 && levelIndex < levelMusic.Length) 
+            if (levelIndex >= 0 && levelIndex < levelMusic.Length)
             {
                 if (!audioSource.isPlaying || audioSource.clip != levelMusic[levelIndex])
                 {
-                    PlayMusic(levelMusic[levelIndex]); 
+                    PlayMusic(levelMusic[levelIndex]);
                 }
             }
         }
-        else if (sceneName == "LoadingScene")
+
+        else if ((sceneName == "LoadingScene") || (sceneName == "Frog Die"))
         {
-            StopMusic(); 
+            StopMusic();
         }
     }
 
@@ -78,7 +79,7 @@ public class MusicManager : MonoBehaviour
 
     private void StopMusic()
     {
-        audioSource.Stop(); 
+        audioSource.Stop();
     }
 
     private int GetLevelIndex(string sceneName)
@@ -86,14 +87,15 @@ public class MusicManager : MonoBehaviour
         int levelNumber;
         if (int.TryParse(sceneName.Replace("Level ", ""), out levelNumber))
         {
-            return levelNumber - 1;  
+            return levelNumber - 1;
         }
-        return -1;  
+        return -1;
     }
 
     private void OnDestroy()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded;  
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
 }
+

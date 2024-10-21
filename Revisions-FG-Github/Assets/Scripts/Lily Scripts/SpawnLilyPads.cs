@@ -6,6 +6,9 @@ public class SpawnLilyPads : MonoBehaviour
 
 
 {
+    public GameObject star1;
+    public GameObject star2;
+
     [Header("Lilypad Objects")]
     [SerializeField] GameObject[] waterRings;
     [SerializeField] GameObject[] lillies;
@@ -90,13 +93,15 @@ public class SpawnLilyPads : MonoBehaviour
 
         if (level == 5)
         {
-            for (int k = 0; k < 2; k++)
-            {
+            GameObject starLily1 = spawnedLillies[(int)Mathf.Floor(Random.Range(0, spawnedLillies.Count - 1))];
+            star1 = Instantiate(star, starLily1.transform.position, Quaternion.identity);
+            star1.transform.parent = starLily1.transform;
+            starLily1.tag = "starLily1";
 
-                GameObject starLily1 = spawnedLillies[(int)Mathf.Floor(Random.Range(0, spawnedLillies.Count - 1))];
-                GameObject star1 = Instantiate(star, starLily1.transform.position, Quaternion.identity);
-                star1.transform.parent = starLily1.transform;
-            }
+            GameObject starLily2 = spawnedLillies[(int)Mathf.Floor(Random.Range(0, spawnedLillies.Count - 1))];
+            star2 = Instantiate(star, starLily2.transform.position, Quaternion.identity);
+            star2.transform.parent = starLily2.transform;
+            starLily2.tag = "starLily2";
         }
     }
 
