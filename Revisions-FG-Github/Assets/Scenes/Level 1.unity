@@ -2571,6 +2571,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 620360053519073682, guid: b0d935662e1a04ebcaad5658872cffac, type: 3}
   m_PrefabInstance: {fileID: 1429214138}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1429214140 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3462809982385347042, guid: b0d935662e1a04ebcaad5658872cffac, type: 3}
+  m_PrefabInstance: {fileID: 1429214138}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf1602e2ebda4d559bb2f3d6eeeb11a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1429214141 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: -4929996090955134628, guid: b0d935662e1a04ebcaad5658872cffac, type: 3}
@@ -3664,8 +3675,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4682719487842418414, guid: 986d0c8054a304ce998bbfc381bfc24c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 65637207925038141}
   m_SourcePrefab: {fileID: 100100000, guid: 986d0c8054a304ce998bbfc381bfc24c, type: 3}
+--- !u!1 &65637207925038140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4682719487842418414, guid: 986d0c8054a304ce998bbfc381bfc24c, type: 3}
+  m_PrefabInstance: {fileID: 65637207925038139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &65637207925038141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65637207925038140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1233e1efaaa6c474a8ee50af6026d27d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frog: {fileID: 1429214140}
+  level: 1
 --- !u!4 &4457124061239386228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6051674131655012825, guid: 941ecf6943b784d99953077227bfc411, type: 3}

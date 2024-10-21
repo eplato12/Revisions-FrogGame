@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7600666892390565893}
   - component: {fileID: 3811918647586582065}
-  - component: {fileID: 5503016599125523677}
   - component: {fileID: -4817815904594519036}
   m_Layer: 0
   m_Name: Water1
@@ -89,24 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5503016599125523677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2641984960226154163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b0bd47ae929b4828a703fcb7c393aba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waterRings: []
-  lillies:
-  - {fileID: 0}
-  portal: {fileID: 0}
-  star: {fileID: 0}
-  level: 0
 --- !u!114 &-4817815904594519036
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class FrogScript : MonoBehaviour
 {
 
     public float lilyPadColliderWidth;
+    public int starCounter = 0; // for level 5 portal activation
 
     [Header("Audio Clips")]
     [SerializeField] AudioClip jumpSound;
@@ -33,7 +34,7 @@ public class FrogScript : MonoBehaviour
     private Coroutine randomSoundCoroutine;
     private float jumpDistance = 1f;
     private float newSpeed = 2.0f;
-    private int starCounter = 0; // for level 5 portal activation
+    
 
     void Start()
     {

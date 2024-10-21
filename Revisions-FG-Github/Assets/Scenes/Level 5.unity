@@ -259,6 +259,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 620360053519073682, guid: b0d935662e1a04ebcaad5658872cffac, type: 3}
   m_PrefabInstance: {fileID: 41776187}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &41776189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3462809982385347042, guid: b0d935662e1a04ebcaad5658872cffac, type: 3}
+  m_PrefabInstance: {fileID: 41776187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf1602e2ebda4d559bb2f3d6eeeb11a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &75583816
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,11 +747,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.0031425168}
   m_Radius: 0.71574163
---- !u!1 &560940178 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3249720705030152005, guid: b0d935662e1a04ebcaad5658872cffac, type: 3}
-  m_PrefabInstance: {fileID: 41776187}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &564155552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,14 +1299,13 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 724839902108356986, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
     - {fileID: 4390911080059785716, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
     - {fileID: 2401534501779300852, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
     - {fileID: 7370855918441381401, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
     - {fileID: 6511052098239942708, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
-    - {fileID: 4477762338253762530, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
-    - {fileID: 322948028666333552, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
-    - {fileID: 6146709755095362146, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     m_RemovedGameObjects:
     - {fileID: 8471599902879135158, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
     - {fileID: 1151482390495020760, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
@@ -3387,13 +3392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1233e1efaaa6c474a8ee50af6026d27d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frog: {fileID: 560940178}
-  arrow: {fileID: 75583816}
+  frog: {fileID: 41776189}
   level: 5
-  portalSound: {fileID: 8300000, guid: 8182e5368322b498dbd31ee223d6deb0, type: 3}
-  advanceScene: {fileID: 0}
-  reachedPortal: 0
-  starCounter: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
