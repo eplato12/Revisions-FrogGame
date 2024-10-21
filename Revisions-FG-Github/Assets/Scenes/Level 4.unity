@@ -261,6 +261,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7663262159064041929, guid: 7809e5d058747442f983396a35ae9394, type: 3}
   m_PrefabInstance: {fileID: 3457899595021871182}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &124902081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124902083}
+  - component: {fileID: 124902082}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &124902082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124902081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ad49de9db3e4baf85199a6ea701871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
+  levelMenuMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
+  frogDieMusic: {fileID: 8300000, guid: e68b5406478d845adbf9f6eb1f3e85e2, type: 3}
+  levelMusic:
+  - {fileID: 8300000, guid: a885240675d4145cbb1880a4df2a4961, type: 3}
+  - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
+  - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
+  - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
+  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
+--- !u!4 &124902083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124902081}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &151260660
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bd47ae929b4828a703fcb7c393aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  star1: {fileID: 0}
+  star2: {fileID: 0}
   waterRings:
   - {fileID: 1570363336}
   - {fileID: 819603585}
@@ -1928,58 +1983,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920e42afb017740b9aba5782d4c6693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1144597561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1144597563}
-  - component: {fileID: 1144597562}
-  m_Layer: 0
-  m_Name: MusicManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1144597562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144597561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54ad49de9db3e4baf85199a6ea701871, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  introMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
-  levelMenuMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
-  levelMusic:
-  - {fileID: 8300000, guid: a885240675d4145cbb1880a4df2a4961, type: 3}
-  - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
-  - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
-  - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
-  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
---- !u!4 &1144597563
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144597561}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152169229
 GameObject:
   m_ObjectHideFlags: 0
@@ -3464,4 +3467,4 @@ SceneRoots:
   - {fileID: 2009383658}
   - {fileID: 1398383798}
   - {fileID: 1925248448}
-  - {fileID: 1144597563}
+  - {fileID: 124902083}

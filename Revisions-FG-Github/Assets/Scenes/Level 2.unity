@@ -434,6 +434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bd47ae929b4828a703fcb7c393aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  star1: {fileID: 0}
+  star2: {fileID: 0}
   waterRings:
   - {fileID: 1570363336}
   - {fileID: 819603585}
@@ -2369,58 +2371,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152169229}
   m_CullTransparentMesh: 1
---- !u!1 &1247617589
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1247617591}
-  - component: {fileID: 1247617590}
-  m_Layer: 0
-  m_Name: MusicManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1247617590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247617589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54ad49de9db3e4baf85199a6ea701871, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  introMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
-  levelMenuMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
-  levelMusic:
-  - {fileID: 8300000, guid: a885240675d4145cbb1880a4df2a4961, type: 3}
-  - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
-  - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
-  - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
-  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
---- !u!4 &1247617591
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247617589}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1396792311
 GameObject:
   m_ObjectHideFlags: 0
@@ -3305,6 +3255,59 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2018327306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2018327308}
+  - component: {fileID: 2018327307}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2018327307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018327306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ad49de9db3e4baf85199a6ea701871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
+  levelMenuMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
+  frogDieMusic: {fileID: 8300000, guid: e68b5406478d845adbf9f6eb1f3e85e2, type: 3}
+  levelMusic:
+  - {fileID: 8300000, guid: a885240675d4145cbb1880a4df2a4961, type: 3}
+  - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
+  - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
+  - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
+  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
+--- !u!4 &2018327308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018327306}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2055743630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3398946927948457378, guid: b96369270dddb4268a5efbdf5d2c2c54, type: 3}
@@ -3455,4 +3458,4 @@ SceneRoots:
   - {fileID: 1808366983}
   - {fileID: 1398383798}
   - {fileID: 1925248448}
-  - {fileID: 1247617591}
+  - {fileID: 2018327308}

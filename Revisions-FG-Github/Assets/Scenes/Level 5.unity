@@ -493,6 +493,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80572342}
   m_CullTransparentMesh: 1
+--- !u!1 &120790885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 120790887}
+  - component: {fileID: 120790886}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &120790886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120790885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ad49de9db3e4baf85199a6ea701871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
+  levelMenuMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
+  frogDieMusic: {fileID: 8300000, guid: e68b5406478d845adbf9f6eb1f3e85e2, type: 3}
+  levelMusic:
+  - {fileID: 8300000, guid: a885240675d4145cbb1880a4df2a4961, type: 3}
+  - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
+  - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
+  - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
+  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
+--- !u!4 &120790887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120790885}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &241739352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,58 +1679,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071077381}
   m_CullTransparentMesh: 1
---- !u!1 &1148965329
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1148965331}
-  - component: {fileID: 1148965330}
-  m_Layer: 0
-  m_Name: MusicManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1148965330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148965329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54ad49de9db3e4baf85199a6ea701871, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  introMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
-  levelMenuMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
-  levelMusic:
-  - {fileID: 8300000, guid: a885240675d4145cbb1880a4df2a4961, type: 3}
-  - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
-  - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
-  - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
-  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
---- !u!4 &1148965331
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148965329}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1169146312
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,4 +3414,4 @@ SceneRoots:
   - {fileID: 1639433481}
   - {fileID: 1421373922}
   - {fileID: 241739354}
-  - {fileID: 1148965331}
+  - {fileID: 120790887}

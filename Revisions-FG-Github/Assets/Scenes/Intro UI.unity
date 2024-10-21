@@ -538,58 +538,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &634013263
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 634013266}
-  - component: {fileID: 634013265}
-  m_Layer: 0
-  m_Name: MusicManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &634013265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634013263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54ad49de9db3e4baf85199a6ea701871, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  introMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
-  levelMenuMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
-  levelMusic:
-  - {fileID: 8300000, guid: a885240675d4145cbb1880a4df2a4961, type: 3}
-  - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
-  - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
-  - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
-  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
---- !u!4 &634013266
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634013263}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &672342348
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,6 +585,59 @@ MonoBehaviour:
   exitPanel: {fileID: 0}
   playButton: {fileID: 0}
   UIelements: []
+--- !u!1 &761136588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 761136590}
+  - component: {fileID: 761136589}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &761136589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761136588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ad49de9db3e4baf85199a6ea701871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
+  levelMenuMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
+  frogDieMusic: {fileID: 8300000, guid: e68b5406478d845adbf9f6eb1f3e85e2, type: 3}
+  levelMusic:
+  - {fileID: 8300000, guid: a885240675d4145cbb1880a4df2a4961, type: 3}
+  - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
+  - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
+  - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
+  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
+--- !u!4 &761136590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761136588}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763562783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,4 +1193,4 @@ SceneRoots:
   - {fileID: 368819970}
   - {fileID: 985776603}
   - {fileID: 672342349}
-  - {fileID: 634013266}
+  - {fileID: 761136590}

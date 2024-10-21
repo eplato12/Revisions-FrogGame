@@ -6,7 +6,9 @@ public class MusicManager : MonoBehaviour
 {
     [SerializeField] private AudioClip introMusic;
     [SerializeField] private AudioClip levelMenuMusic;
+    [SerializeField] private AudioClip frogDieMusic;
     [SerializeField] private AudioClip[] levelMusic;
+   
 
     private static MusicManager instance;
     private AudioSource audioSource;
@@ -61,11 +63,15 @@ public class MusicManager : MonoBehaviour
                 }
             }
         }
-
-        else if ((sceneName == "LoadingScene") || (sceneName == "Frog Die"))
+        else if (sceneName == "Frog Die")
+        {
+            PlayMusic(frogDieMusic);
+        }
+        else if (sceneName == "LoadingScene")
         {
             StopMusic();
         }
+
     }
 
     private void PlayMusic(AudioClip music)

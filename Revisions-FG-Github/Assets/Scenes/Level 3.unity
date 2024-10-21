@@ -250,58 +250,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5746832}
   m_CullTransparentMesh: 1
---- !u!1 &97982430
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 97982432}
-  - component: {fileID: 97982431}
-  m_Layer: 0
-  m_Name: MusicManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &97982431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97982430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54ad49de9db3e4baf85199a6ea701871, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  introMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
-  levelMenuMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
-  levelMusic:
-  - {fileID: 8300000, guid: a885240675d4145cbb1880a4df2a4961, type: 3}
-  - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
-  - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
-  - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
-  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
---- !u!4 &97982432
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97982430}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &197906358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -631,6 +579,59 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 829304120}
   m_SourcePrefab: {fileID: 100100000, guid: 17bd09479951a41f9b23795c020ce467, type: 3}
+--- !u!1 &318409602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 318409604}
+  - component: {fileID: 318409603}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &318409603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318409602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ad49de9db3e4baf85199a6ea701871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
+  levelMenuMusic: {fileID: 8300000, guid: 4b0fa3dc6f89443849253d641f261092, type: 3}
+  frogDieMusic: {fileID: 8300000, guid: e68b5406478d845adbf9f6eb1f3e85e2, type: 3}
+  levelMusic:
+  - {fileID: 8300000, guid: a885240675d4145cbb1880a4df2a4961, type: 3}
+  - {fileID: 8300000, guid: c78f166e58ded44f79ccc704d25276da, type: 3}
+  - {fileID: 8300000, guid: 7e4749607ae1c4d3293ccc79f0074f41, type: 3}
+  - {fileID: 8300000, guid: 01a81219854a145eb8eea0123a48391e, type: 3}
+  - {fileID: 8300000, guid: 7f47cf01cfe474a56808295f7e23e046, type: 3}
+--- !u!4 &318409604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318409602}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &348858734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0bd47ae929b4828a703fcb7c393aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  star1: {fileID: 0}
+  star2: {fileID: 0}
   waterRings:
   - {fileID: 1136632427}
   - {fileID: 1136632425}
@@ -3762,4 +3765,4 @@ SceneRoots:
   - {fileID: 599976473}
   - {fileID: 212979414}
   - {fileID: 234014026}
-  - {fileID: 97982432}
+  - {fileID: 318409604}
