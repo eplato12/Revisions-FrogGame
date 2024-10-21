@@ -4,12 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour
 {
-    private static MusicManager instance;
-
     [SerializeField] private AudioClip introMusic;        
     [SerializeField] private AudioClip levelMenuMusic;   
-    [SerializeField] private AudioClip[] levelMusic;      
+    [SerializeField] private AudioClip[] levelMusic;
 
+    private static MusicManager instance;
     private AudioSource audioSource;
 
     private void Awake()
@@ -96,4 +95,5 @@ public class MusicManager : MonoBehaviour
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;  
     }
+
 }
